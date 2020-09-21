@@ -1,6 +1,6 @@
 {
-  "name": "punystore",
-  "version": "1.0.0",
+  "name": "tidystore",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "typings": "esm/index.d.ts",
