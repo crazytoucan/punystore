@@ -1,12 +1,12 @@
-[![](https://img.shields.io/circleci/build/github/crazytoucan/punystore)](https://app.circleci.com/pipelines/github/crazytoucan/punystore?branch=develop)
-[![](https://img.shields.io/npm/v/punystore)](https://www.npmjs.com/package/punystore)
+[![](https://img.shields.io/circleci/build/github/crazytoucan/tidystore)](https://app.circleci.com/pipelines/github/crazytoucan/tidystore?branch=develop)
+[![](https://img.shields.io/npm/v/tidystore)](https://www.npmjs.com/package/tidystore)
 
-# punystore
+# tidystore
 
 ## Installation
 
 ```sh
-$ yarn add punystore
+$ yarn add tidystore
 ```
 
 Comes with TypeScript typings out of the box, as well as ESM support and tree shaking.
