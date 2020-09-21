@@ -1,5 +1,5 @@
 import * as React from "react";
-import { TINYSTORE_CONTEXT } from "./const";
+import { PUNYSTORE_CONTEXT } from "./const";
 import { IStore } from "./types";
 
 interface IProps {
@@ -7,5 +7,5 @@ interface IProps {
 }
 
 export function Provider({ store, children }: React.PropsWithChildren<IProps>) {
-  return <TINYSTORE_CONTEXT.Provider value={store}>{children}</TINYSTORE_CONTEXT.Provider>;
+  return <PUNYSTORE_CONTEXT.Provider value={store}>{children}</PUNYSTORE_CONTEXT.Provider>;
 }

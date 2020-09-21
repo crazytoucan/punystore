@@ -1,5 +1,5 @@
 import { useContext, useLayoutEffect, useMemo, useReducer } from "react";
-import { TINYSTORE_CONTEXT } from "../const";
+import { PUNYSTORE_CONTEXT } from "../const";
 
 function referenceEquals<T>(a: T, b: T) {
   return a === b;
@@ -15,7 +15,7 @@ export function useSelector<T>(
   equalityFn: <V>(a: V, b: V) => boolean = referenceEquals,
 ) {
   const forceUpdate = useForceUpdate();
-  const store = useContext(TINYSTORE_CONTEXT);
+  const store = useContext(PUNYSTORE_CONTEXT);
   const result = selector(store.state);
   const ref = useMemo<{
     isUpdateQueued: boolean;

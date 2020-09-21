@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { TINYSTORE_CONTEXT } from "../const";
+import { PUNYSTORE_CONTEXT } from "../const";
 
 export function useDispatch() {
-  const store = useContext(TINYSTORE_CONTEXT);
+  const store = useContext(PUNYSTORE_CONTEXT);
   return store.dispatch;
 }
 

@@ -1,12 +1,12 @@
 /**
- * The main Store type included with Tinystore. This Store behaves similarly to
+ * The main Store type included with Punystore. This Store behaves similarly to
  * those from Redux and effectively replaces the role of Redux in your application.
  *
  * Those differences from regular Redux are that:
  *
- * * The Tinystore Store is only mutated via setState(), rather than reducers. You are encouraged to use
+ * * The Punystore Store is only mutated via setState(), rather than reducers. You are encouraged to use
  *   a library like `immutability-helper` for your state manipulation needs.
- * * The Tinystore Store dispatches actions after a defer() to prevent superfluous React tree updates.
+ * * The Punystore Store dispatches actions after a defer() to prevent superfluous React tree updates.
  *   If you really do need synchronous tree renders, call Store.flush() after Store.setState().
  * * No Redux devtools integration
  *
