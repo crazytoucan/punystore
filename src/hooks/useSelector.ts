@@ -12,7 +12,7 @@ function useForceUpdate() {
 
 export function useSelector<T>(
   selector: (state: any) => T,
-  equalityFn: (a: T, b: T) => boolean = referenceEquals,
+  equalityFn: <V>(a: V, b: V) => boolean = referenceEquals,
 ) {
   const forceUpdate = useForceUpdate();
   const store = useContext(TINYSTORE_CONTEXT);
@@ -41,4 +41,15 @@ export function useSelector<T>(
     });
   }, undefined);
   return result;
+}
+
+export function createUseSelector<TSTATE>(
+  defaultEqualityFn: <T>(a: T, b: T) => boolean = referenceEquals,
+) {
+  return <T>(
+    selector: (state: TSTATE) => T,
+    equalityFn: <V>(a: V, b: V) => boolean = defaultEqualityFn,
+  ) => {
+    return useSelector(selector, equalityFn);
+  };
 }
