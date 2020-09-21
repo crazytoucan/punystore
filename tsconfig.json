@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "lib": ["dom", "es2015"],
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "outDir": "esm",
+    "strict": true,
+    "target": "ES2017"
+  },
+  "exclude": ["node_modules", "lib", "esm"]
+}
