@@ -1,6 +1,14 @@
 /**
- * A Store type included with Tinysaga. This Store can be handed directly to React-Redux
- * and will completely replace the Redux needs of some applications.
+ * The main Store type included with Tinystore. This Store behaves similarly to
+ * those from Redux and effectively replaces the role of Redux in your application.
+ *
+ * Those differences from regular Redux are that:
+ *
+ * * The Tinystore Store is only mutated via setState(), rather than reducers. You are encouraged to use
+ *   a library like `immutability-helper` for your state manipulation needs.
+ * * The Tinystore Store dispatches actions after a defer() to prevent superfluous React tree updates.
+ *   If you really do need synchronous tree renders, call Store.flush() after Store.setState().
+ * * No Redux devtools integration
  *
  * For constructing a store, use the Store class.
  */
